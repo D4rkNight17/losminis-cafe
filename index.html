@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Los Minis Café & Pan</title>
+  <meta name="description" content="Café de especialidad y pan artesanal en Hecelchakán, Campeche. Ambiente retro único con tocadiscos Victrola. Viernes a domingo 18:00–23:00 hrs.">
+
+  <link rel="icon" href="assets/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <meta name="theme-color" content="#627A48">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,600&family=Lato:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <a href="#inicio" class="brand">
+      <img src="assets/logo.png" alt="Los Minis Café & Pan" class="brand-logo"
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+      <div class="brand-wordmark" style="display:none;">Los Minis <span>&</span> Pan</div>
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#esencia">Nosotros</a></li>
+      <li><a href="#menu">Menú</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#reservaciones">Reservaciones</a></li>
+      <li><a href="#horarios">Horarios</a></li>
+    </ul>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg">
+    </div>
+
+    <div class="hero-content">
+      <span class="hero-eyebrow">
+        <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24" style="opacity:.7"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/></svg>
+        Hecelchakán, Campeche
+      </span>
+
+      <h1>Los Minis<br><em>Café &amp; Pan</em></h1>
+
+      <p class="hero-slogan">
+        Donde cada taza cuenta una historia.<br>
+        Café de especialidad, pan artesanal y el disco girando de fondo.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#menu" class="btn btn-primary">Ver Menú</a>
+        <a href="#reservaciones" class="btn btn-outline-light">Reservar Mesa</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <span>Descubrir</span>
+      <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- wave -->
+  <div class="wave w-hero-menu" style="margin-top:-1px;">
+    <svg viewBox="0 0 1440 56" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="height:56px;width:100%;">
+      <path d="M0,28 C480,56 960,0 1440,28 L1440,56 L0,56 Z"/>
+    </svg>
+  </div>
+
+
+  <!-- NUESTRA ESENCIA -->
+  <section class="section" id="esencia">
+    <div class="esencia-wrap">
+
+      <div class="esencia-photo">
+        <img src="assets/foto-exterior.jpg" alt="Interior Los Minis"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="esencia-photo-ph" style="display:none;">🏡</div>
+        <span class="esencia-photo-badge">Hecelchakán, Camp.</span>
+      </div>
+
+      <div class="esencia-text">
+        <span class="eyebrow">Quiénes somos</span>
+        <h2>Un Rincón con Alma Propia</h2>
+        <div class="divider" style="margin-left:0;"></div>
+        <p style="margin-top:1.5rem;">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <p>
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <span class="feature-icon">🎶</span>
+            <div>
+              <h4>Música de ambiente</h4>
+              <p>Melodías tranquilas para que te desconectes y disfrutes tu visita</p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon">☕</span>
+            <div>
+              <h4>Café de especialidad</h4>
+              <p>Preparaciones cuidadas, grano por grano</p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon">🥐</span>
+            <div>
+              <h4>Pan artesanal</h4>
+              <p>Horneado fresco para cada servicio</p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon">🌿</span>
+            <div>
+              <h4>Ambiente retro</h4>
+              <p>Decoración vintage que invita a quedarse</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- wave -->
+  <div class="wave w-menu-esencia" style="margin-top:-1px;">
+    <svg viewBox="0 0 1440 56" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="height:56px;width:100%;">
+      <path d="M0,28 C480,56 960,0 1440,28 L1440,56 L0,56 Z"/>
+    </svg>
+  </div>
+
+
+  <!-- MENÚ -->
+  <section class="section section-alt" id="menu">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Lo que ofrecemos</span>
+        <h2>Nuestro Menú</h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="menu-tabs">
+        <button class="menu-tab active" data-cat="clasicos">Cafés Clásicos</button>
+        <button class="menu-tab" data-cat="frios">Cafés Fríos</button>
+        <button class="menu-tab" data-cat="especiales">Tés &amp; Especiales</button>
+        <button class="menu-tab" data-cat="frappes">Frappes</button>
+        <button class="menu-tab" data-cat="alimentos">Alimentos</button>
+        <button class="menu-tab" data-cat="refrescos">Refrescos</button>
+      </div>
+
+      <!-- ── Cafés Clásicos ── -->
+      <div class="menu-category active" id="cat-clasicos">
+        <div class="menu-card">
+          <div class="menu-card-head"><h3>Espresso</h3><span class="menu-price">$30</span></div>
+          <p class="menu-desc">Café corto e intenso, extraído a alta presión, con aroma profundo y cuerpo marcado.</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-head"><h3>Americano</h3><span class="menu-price">$35</span></div>
+          <p class="menu-desc">Espresso suavizado con agua caliente. Sabor equilibrado y ligero.</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-head"><h3>Long Black</h3><span class="menu-price">$35</span></div>
+          <p class="menu-desc">Doble espresso servido sobre agua caliente. Más intenso y aromático que el americano, con la crema intacta.</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-head"><h3>Capuchino</h3><span class="menu-price">$45</span></div>
+          <p class="menu-desc">Espresso con leche vaporizada y espuma cremosa en partes iguales. Cremoso y delicado.</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-head"><h3>Latte</h3><span class="menu-price">$50</span></div>
+          <p class="menu-desc">Espresso con abundante leche vaporizada y un toque de espuma. Cremoso y delicado.</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-head"><h3>Mocha</h3><span class="menu-price">$50</span></div>
+          <p class="menu-desc">Espresso con chocolate y leche vaporizada. Ideal para amantes del sabor dulce.</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-head"><h3>Latte Saborizado</h3><span class="menu-price">$55</span></div>
+          <p class="menu-desc">Espresso con abundante leche vaporizada con jarabe de tu preferencia. Dulce y reconfortante.</p>
+          <span class="menu-badge">Vainilla · Moka · Caramelo · Crema Irlandesa · Vainilla Francesa</span>
+        </div>
+      </div>
+
+      <!-- ── Cafés Fríos ── -->
+      <div class="menu-category" id="cat-frios">
+        <div class="menu-card">
+          <div class="menu-card-head"><h3>Americano Frío</h3><span class="menu-price">$40</span></div>
+          <p class="menu-desc">Espresso con agua fría y hielo. Ligero y refrescante.</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-head"><h3>Capuchino Frío</h3><span class="menu-price">$50</span></div>
+          <p class="menu-desc">Café frío con leche y espuma. Balance perfecto entre intensidad y frescura.</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-head"><h3>Latte Frío</h3><span class="menu-price">$50</span></div>
+          <p class="menu-desc">Espresso con leche fría y hielo. Cremoso y fácil de tomar.</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-head"><h3>Mocha Frío</h3><span class="menu-price">$55</span></div>
+          <p class="menu-desc">Café, chocolate y leche fría. Dulce y refrescante.</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-head"><h3>Latte Saborizado Frío</h3><span class="menu-price">$55</span></div>
+          <p class="menu-desc">Espresso con leche fría y el jarabe de tu preferencia. Dulce, cremoso y helado.</p>
+          <span class="menu-badge">Vainilla · Moka · Caramelo · Crema Irlandesa · Vainilla Francesa</span>
+        </div>
+      </div>
+
+      <!-- ── Tés & Especiales ── -->
+      <div class="menu-category" id="cat-especiales">
+        <div class="menu-card">
+          <div class="menu-card-head"><h3>Té Chai Latte</h3><span class="menu-price">$65</span></div>
+          <p class="menu-desc">Té Chai con leche vaporizada. Suave, especiado y reconfortante.</p>
+          <span class="menu-badge">Caliente</span>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-head"><h3>Matcha Latte</h3><span class="menu-price">$65</span></div>
+          <p class="menu-desc">Té verde japonés en polvo. Herbal, intenso y lleno de energía natural.</p>
+          <span class="menu-badge">Caliente</span>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-head"><h3>Chocolate Caliente</h3><span class="menu-price">$55</span></div>
+          <p class="menu-desc">Bebida cremosa de cacao, dulce y reconfortante.</p>
+          <span class="menu-badge">Caliente</span>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-head"><h3>Té Chai Latte Frío</h3><span class="menu-price">$65</span></div>
+          <p class="menu-desc">Té Chai con leche fría y hielo. Especiado, aromático y refrescante.</p>
+          <span class="menu-badge">Frío</span>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-head"><h3>Matcha Latte Frío</h3><span class="menu-price">$65</span></div>
+          <p class="menu-desc">Té verde japonés con leche fría y hielo. Herbal e intenso en versión refrescante.</p>
+          <span class="menu-badge">Frío</span>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-head"><h3>Chocolate Frío</h3><span class="menu-price">$60</span></div>
+          <p class="menu-desc">Bebida cremosa de cacao con hielo. Dulce y refrescante.</p>
+          <span class="menu-badge">Frío</span>
+        </div>
+      </div>
+
+      <!-- ── Frappes ── -->
+      <div class="menu-category" id="cat-frappes">
+        <div class="menu-card">
+          <div class="menu-card-head"><h3>Frapuchino Clásico</h3><span class="menu-price">$50</span></div>
+          <p class="menu-desc">Bebida fría y cremosa a base de café, hielo y leche perfectamente licuada. Refrescante, equilibrada y con el sabor de café que nunca falta.</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-head"><h3>Frapuchino Vainilla</h3><span class="menu-price">$50</span></div>
+          <p class="menu-desc">Suave y dulce, con notas aromáticas de vainilla que envuelven el paladar. Ideal para quienes prefieren un sabor ligero y cremoso.</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-head"><h3>Frapuchino Moka</h3><span class="menu-price">$55</span></div>
+          <p class="menu-desc">La combinación perfecta de café y chocolate. Cremoso, intenso y reconfortante, con un toque dulce irresistible.</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-head"><h3>Frapuchino Oreo</h3><span class="menu-price">$55</span></div>
+          <p class="menu-desc">Delicioso y cremoso, preparado con galleta Oreo triturada. Dulce, divertido y favorito de chicos y grandes.</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-head"><h3>Frapuchino Nutella</h3><span class="menu-price">$60</span></div>
+          <p class="menu-desc">Bebida fría y cremosa con el irresistible sabor a chocolate y avellana. Dulce, intensa y simplemente deliciosa.</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-head"><h3>Frapuchino Fresas c/crema</h3><span class="menu-price">$60</span></div>
+          <p class="menu-desc">Refrescante y frutal, con fresas y un toque cremoso que recuerda a los postres clásicos de la infancia.</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-head"><h3>Frapuchino Pay de Limón</h3><span class="menu-price">$60</span></div>
+          <p class="menu-desc">Mezcla cremosa y ligeramente ácida, inspirada en el tradicional pay de limón. Fresco, equilibrado y perfecto para días calurosos.</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-head"><h3>Frapuchino Mango</h3><span class="menu-price">$60</span></div>
+          <p class="menu-desc">Tropical y vibrante, con el sabor natural del mango. Dulce, refrescante y lleno de color.</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-head"><h3>Frapuchino Taro</h3><span class="menu-price">$65</span></div>
+          <p class="menu-desc">Exótico y suave, con un sabor delicado y ligeramente dulce. Cremoso, diferente y visualmente encantador.</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-head"><h3>Frapuchino Chai</h3><span class="menu-price">$65</span></div>
+          <p class="menu-desc">Mezcla especiada de té chai con canela, clavo y vainilla, servida bien fría y cremosa. Exótico, aromático y reconfortante.</p>
+        </div>
+      </div>
+
+      <!-- ── Alimentos ── -->
+      <div class="menu-category" id="cat-alimentos">
+        <div class="menu-card">
+          <div class="menu-card-head"><h3>Cuernito</h3><span class="menu-price">$55</span></div>
+          <p class="menu-desc">Cuernito dorado y suave, relleno de jamón y queso derretido, acompañado de vegetales frescos y papas tipo Sabritas.</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-head"><h3>Baguette</h3><span class="menu-price">$70</span></div>
+          <p class="menu-desc">Baguette crujiente relleno de jamones y queso, con vegetales frescos y una porción de papas tipo Sabritas.</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-head"><h3>Crossaint</h3><span class="menu-price">$70</span></div>
+          <p class="menu-desc">Pan suave relleno de jamón y queso, servido con vegetales frescos y papas tipo Sabritas.</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-head"><h3>Waffle</h3><span class="menu-price">$60</span></div>
+          <p class="menu-desc">Waffle recién hecho, acompañado de crema batida y fruta fresca de temporada. Dulce y delicioso.</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-head"><h3>Waffle Salado</h3><span class="menu-price">$110</span></div>
+          <p class="menu-desc">2 waffles dorados rellenos de jamones, queso y tocino, acompañados de vegetales frescos. Una combinación única y llena de sabor.</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-head"><h3>Mini-Hotcakes</h3><span class="menu-price">$60</span></div>
+          <p class="menu-desc">25 mini hotcakes esponjosos, ideales para compartir, acompañados con miel, lechera o nutella y toppings.</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-head"><h3>Mini-Pizzas</h3><span class="menu-price">$65</span></div>
+          <p class="menu-desc">Cinco mini pizzas con pepperoni y queso derretido, servidas con una porción de papas a la francesa.</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-head"><h3>Chapata</h3><span class="menu-price">$65</span></div>
+          <p class="menu-desc">Deliciosa chapata con salsa al pesto, con jamón, quesos y tocino, acompañada de papas tipo Sabritas.</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-head"><h3>Papas a la Francesa</h3><span class="menu-price">$50</span></div>
+          <p class="menu-desc">Deliciosas y crujientes papas a la francesa para acompañar y complementar tus alimentos.</p>
+        </div>
+      </div>
+
+      <!-- ── Refrescos & Postres ── -->
+      <div class="menu-category" id="cat-refrescos">
+        <div class="menu-card">
+          <div class="menu-card-head"><h3>Té Don Chava</h3><span class="menu-price">$28</span></div>
+          <p class="menu-desc">Refrescante y natural, perfecto para acompañar tu orden.</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-head"><h3>Coca Cola</h3><span class="menu-price">$30</span></div>
+          <p class="menu-desc">El clásico de siempre, bien frío.</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-head"><h3>Refrescos de Sabor</h3><span class="menu-price">$30</span></div>
+          <p class="menu-desc">Pregunta a nuestro personal por los sabores disponibles del día.</p>
+        </div>
+        <div class="menu-card" style="grid-column: 1 / -1; background: linear-gradient(135deg, var(--bg), var(--bg-alt)); border-style: dashed;">
+          <div class="menu-card-head">
+            <h3 style="color:var(--accent);">🍰 Postres del Día</h3>
+          </div>
+          <p class="menu-desc">Pregunta a nuestro personal por los postres disponibles; siempre hay algo especial para consentirte.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- wave -->
+  <div class="wave w-esencia-menu2" style="margin-top:-1px;">
+    <svg viewBox="0 0 1440 56" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="height:56px;width:100%;">
+      <path d="M0,28 C480,56 960,0 1440,28 L1440,56 L0,56 Z"/>
+    </svg>
+  </div>
+
+
+  <!-- GALERÍA -->
+  <section class="section" id="galeria">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Nuestro espacio</span>
+        <h2>Una Atmósfera Única</h2>
+        <div class="divider"></div>
+        <p style="margin-top:1rem;color:var(--text-muted);max-width:480px;margin-left:auto;margin-right:auto;">
+          Cada detalle cuenta una historia — la misma que queremos compartir contigo.
+        </p>
+      </div>
+
+      <div class="gallery-grid">
+
+        <!-- foto-interior.jpg -->
+        <div class="gallery-item g1">
+          <img src="assets/foto-interior.jpg" alt="Interior Los Minis"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="gallery-overlay"><span class="gallery-label">El interior</span></div>
+        </div>
+
+        <!-- foto-victrola.jpg -->
+        <div class="gallery-item g2">
+          <img src="assets/foto-victrola.jpg" alt="Tocadiscos Victrola"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="gallery-overlay"><span class="gallery-label">Victrola</span></div>
+        </div>
+
+        <!-- foto-detalles.jpg -->
+        <div class="gallery-item g3">
+          <img src="assets/foto-detalles.jpg" alt="Detalles vintage"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="gallery-overlay"><span class="gallery-label">Detalles</span></div>
+        </div>
+
+        <!-- foto-exterior.jpg -->
+        <div class="gallery-item g4">
+          <img src="assets/foto-exterior.jpg" alt="Fachada nocturna Los Minis"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="gallery-overlay"><span class="gallery-label">Fachada de noche</span></div>
+        </div>
+
+        <!-- foto-café.jpg -->
+        <div class="gallery-item g5">
+          <img src="assets/foto-café.jpg" alt="Café de especialidad"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="gallery-overlay"><span class="gallery-label">Café de especialidad</span></div>
+        </div>
+
+        <!-- foto-combo.jpg -->
+        <div class="gallery-item g6">
+          <img src="assets/foto-combo.jpg" alt="Combo Perfecto"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="gallery-overlay"><span class="gallery-label">Combo Perfecto</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- wave -->
+  <div class="wave w-menu-gal" style="margin-top:-1px;">
+    <svg viewBox="0 0 1440 56" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="height:56px;width:100%;">
+      <path d="M0,28 C480,56 960,0 1440,28 L1440,56 L0,56 Z"/>
+    </svg>
+  </div>
+
+
+  <!-- RESERVACIONES -->
+  <section class="section section-alt" id="reservaciones">
+    <div class="res-wrap">
+      <div class="res-info">
+        <span class="eyebrow">Agenda tu visita</span>
+        <h2>Reserva Tu Mesa</h2>
+        <div class="divider" style="margin-left:0;"></div>
+        <p style="margin-top:1.5rem;">
+          Asegura tu lugar en Los Minis. Los fines de semana se llenan rápido
+          y queremos que tu visita sea perfecta desde el primer momento.
+        </p>
+        <ul class="check-list" style="margin-top:1.4rem;">
+          <li>Confirmación directa por WhatsApp</li>
+          <li>Sin cargos ni depósito previo</li>
+          <li>Atención personalizada garantizada</li>
+          <li>Grupos y ocasiones especiales bienvenidos</li>
+        </ul>
+      </div>
+
+      <div class="res-form">
+        <h3>Completa tus datos</h3>
+        <div class="field">
+          <label for="rNombre">Nombre completo</label>
+          <input type="text" id="rNombre" placeholder="¿Cómo te llamas?" autocomplete="name">
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="rFecha">Fecha</label>
+            <input type="date" id="rFecha">
+          </div>
+          <div class="field">
+            <label for="rHora">Hora</label>
+            <select id="rHora">
+              <option value="" disabled selected>Selecciona</option>
+              <option>18:00</option><option>18:30</option>
+              <option>19:00</option><option>19:30</option>
+              <option>20:00</option><option>20:30</option>
+              <option>21:00</option><option>21:30</option>
+              <option>22:00</option><option>22:30</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="rPersonas">Personas</label>
+            <select id="rPersonas">
+              <option value="" disabled selected>¿Cuántos?</option>
+              <option>1 persona</option><option>2 personas</option>
+              <option>3 personas</option><option>4 personas</option>
+              <option>5 personas</option><option>6 personas</option>
+              <option>7 o más</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="rWA">Tu WhatsApp</label>
+            <input type="tel" id="rWA" placeholder="999 000 0000" autocomplete="tel">
+          </div>
+        </div>
+        <button class="btn btn-wa" onclick="reservar()">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Reservar por WhatsApp
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- wave -->
+  <div class="wave w-gal-res" style="margin-top:-1px;">
+    <svg viewBox="0 0 1440 56" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="height:56px;width:100%;">
+      <path d="M0,28 C480,56 960,0 1440,28 L1440,56 L0,56 Z"/>
+    </svg>
+  </div>
+
+
+  <!-- HORARIOS & UBICACIÓN -->
+  <section class="section" id="horarios">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Ven a visitarnos</span>
+        <h2>Horarios &amp; Ubicación</h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="loc-wrap">
+        <div class="hours-card">
+          <h2>Horarios</h2>
+          <p class="hours-sub">Abrimos para ti los fines de semana</p>
+          <ul class="hours-list">
+            <li><span class="day">Lunes</span>    <span class="time closed">Cerrado</span></li>
+            <li><span class="day">Martes</span>   <span class="time closed">Cerrado</span></li>
+            <li><span class="day">Miércoles</span><span class="time closed">Cerrado</span></li>
+            <li><span class="day">Jueves</span>   <span class="time closed">Cerrado</span></li>
+            <li><span class="day">Viernes</span>  <span class="time">18:00 – 23:00</span></li>
+            <li><span class="day">Sábado</span>   <span class="time">18:00 – 23:00</span></li>
+            <li><span class="day">Domingo</span>  <span class="time">18:00 – 23:00</span></li>
+          </ul>
+          <div class="hours-address">
+            <p>📍 C. 20 50-40, Barrio de la Conquista<br>24800 Hecelchakán, Campeche, México</p>
+            <a href="https://wa.me/529961442564" target="_blank" rel="noopener" class="btn-wa-sm">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Escríbenos por WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="map-wrap">
+          <iframe
+            src="https://maps.google.com/maps?q=20.180508,-90.132609&t=&z=17&ie=UTF8&iwloc=&output=embed"
+            allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            title="Ubicación Los Minis Café & Pan, Hecelchakán">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- wave -->
+  <div class="wave w-res-hours" style="margin-top:-1px;">
+    <svg viewBox="0 0 1440 56" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="height:56px;width:100%;">
+      <path d="M0,28 C480,56 960,0 1440,28 L1440,56 L0,56 Z"/>
+    </svg>
+  </div>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+          <img src="assets/logo.png" alt="Los Minis Café & Pan" class="footer-logo"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        <div class="footer-brand-name" style="display:none;">Los Minis</div>
+        <p>Café de especialidad, pan artesanal y ambiente retro único.<br>
+           Un rincón con alma propia en el corazón de Hecelchakán.</p>
+        <div class="socials">
+          <a href="#" class="social-icon" aria-label="Instagram">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="https://wa.me/529961442564" target="_blank" class="social-icon" aria-label="WhatsApp">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#esencia">Nosotros</a></li>
+          <li><a href="#menu">Menú</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#reservaciones">Reservaciones</a></li>
+          <li><a href="#horarios">Horarios</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Encuéntranos</h4>
+        <p>C. 20 50-40, Barrio de la Conquista<br>24800 Hecelchakán, Camp.</p>
+        <p style="margin-top:.9rem;">Viernes a domingo<br>6:00 PM – 11:00 PM</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Los Minis Café &amp; Pan · Todos los derechos reservados</p>
+      <p>Hecho con café en Hecelchakán</p>
+    </div>
+  </footer>
+
+
+  <script src="main.js"></script>
+</body>
+</html>
