@@ -140,15 +140,15 @@ function reservar() {
   const fechaES = `${parseInt(d)} de ${meses[parseInt(m) - 1]} de ${y}`;
 
   const msg =
-`¡Hola Los Minis! 👋 Me gustaría hacer una reservación:
+`¡Hola Los Minis! Me gustaría hacer una reservación:
 
-📋 *Nombre:* ${nombre}
-📅 *Fecha:* ${fechaES}
-🕐 *Hora:* ${hora} hrs
-👥 *Personas:* ${personas}
-📱 *Mi WhatsApp:* ${wa}
+*Nombre:* ${nombre}
+*Fecha:* ${fechaES}
+*Hora:* ${hora} hrs
+*Personas:* ${personas}
+*Mi WhatsApp:* ${wa}
 
-¡Muchas gracias! ☕🌿`;
+¡Muchas gracias!`;
 
   window.open(`https://wa.me/529961442564?text=${encodeURIComponent(msg)}`, '_blank');
 }
