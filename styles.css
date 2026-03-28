@@ -448,7 +448,11 @@ h3 { font-size: 1.15rem; }
   box-shadow: 0 0 0 3px rgba(98,122,72,.12);
 }
 .cal-trigger svg { flex-shrink: 0; opacity: .5; }
-.cal-trigger-text.has-value { color: var(--text); }
+.cal-trigger-text {
+  flex: 1; min-width: 0;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.cal-trigger-text.has-value { color: var(--text); font-size: .88rem; }
 
 .cal-panel {
   display: none; position: absolute; top: calc(100% + .5rem); left: 0;
