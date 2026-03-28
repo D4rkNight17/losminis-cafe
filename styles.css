@@ -430,6 +430,88 @@ h3 { font-size: 1.15rem; }
 }
 .gallery-item:hover .gallery-label { opacity: 1; transform: translateY(0); }
 
+/* CALENDARIO PERSONALIZADO */
+.cal-wrapper { position: relative; }
+
+.cal-trigger {
+  width: 100%; padding: .8rem 1rem; min-height: 44px;
+  border: 2px solid var(--input-border); border-radius: var(--radius-sm);
+  background: var(--input-bg); cursor: pointer;
+  display: flex; align-items: center; justify-content: space-between; gap: .5rem;
+  font-family: 'Lato', sans-serif; font-size: .93rem;
+  color: var(--text-muted); text-align: left;
+  transition: border-color .22s, box-shadow .22s;
+}
+.cal-trigger.open,
+.cal-trigger:focus {
+  border-color: var(--primary); outline: none;
+  box-shadow: 0 0 0 3px rgba(98,122,72,.12);
+}
+.cal-trigger svg { flex-shrink: 0; opacity: .5; }
+.cal-trigger-text.has-value { color: var(--text); }
+
+.cal-panel {
+  display: none; position: absolute; top: calc(100% + .5rem); left: 0;
+  z-index: 200; width: 288px;
+  background: var(--card-bg); border-radius: var(--radius-md);
+  border: 1px solid var(--input-border); box-shadow: var(--shadow-lg);
+  padding: 1.1rem 1rem 1rem;
+}
+.cal-panel.open { display: block; }
+
+.cal-header {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: .9rem;
+}
+.cal-title {
+  font-family: 'Playfair Display', serif;
+  font-size: .98rem; color: var(--text);
+  text-transform: capitalize; font-weight: 500;
+}
+.cal-nav {
+  background: none; border: none; cursor: pointer;
+  color: var(--primary); padding: .3rem;
+  border-radius: var(--radius-sm); display: flex; align-items: center;
+  transition: background .18s;
+}
+.cal-nav:hover { background: var(--badge-bg); }
+
+.cal-weekdays {
+  display: grid; grid-template-columns: repeat(7, 1fr);
+  margin-bottom: .3rem;
+}
+.cal-wd {
+  text-align: center; font-size: .65rem; font-weight: 700;
+  letter-spacing: .04em; text-transform: uppercase;
+  padding: .25rem 0; color: var(--text-muted);
+}
+.cal-wd.open-day { color: var(--primary); }
+
+.cal-days {
+  display: grid; grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+}
+.cal-day {
+  aspect-ratio: 1; display: flex; align-items: center; justify-content: center;
+  border-radius: 8px; font-size: .82rem; border: none; background: none;
+  font-family: 'Lato', sans-serif; color: var(--text);
+  cursor: pointer; transition: background .18s, color .18s;
+}
+.cal-day.empty { pointer-events: none; }
+.cal-day.unavailable {
+  color: rgba(41,23,16,.2); cursor: not-allowed; pointer-events: none;
+}
+.cal-day.open-day:hover { background: var(--badge-bg); color: var(--primary); }
+.cal-day.selected { background: var(--primary) !important; color: #fff !important; font-weight: 700; }
+.cal-day.today:not(.selected) {
+  box-shadow: inset 0 0 0 2px var(--accent); font-weight: 700;
+}
+
+.cal-note {
+  text-align: center; font-size: .7rem; color: var(--text-muted);
+  margin-top: .8rem; opacity: .7;
+}
+
 /* RESERVACIONES */
 .res-wrap {
   display: grid; grid-template-columns: 1fr 1fr;
@@ -580,6 +662,8 @@ h3 { font-size: 1.15rem; }
   .menu-tabs::-webkit-scrollbar { display: none; }
   .menu-tab { flex-shrink: 0; }
   .menu-category { grid-template-columns: 1fr; }
+
+  .cal-panel { width: 100%; left: 0; right: 0; }
 
   .gallery-grid { grid-template-columns: 1fr 1fr; grid-auto-rows: 160px; }
   .g1 { grid-column: span 2; grid-row: span 2; }
